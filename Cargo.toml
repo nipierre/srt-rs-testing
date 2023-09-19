@@ -1,0 +1,27 @@
+[package]
+name = "srt-rs-testing"
+version = "0.0.1"
+authors = [
+  "Nicolas Pierre <nico.pierre@icloud.com>"
+]
+license = "MIT"
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+async-std = "1.6.0"
+bytes = "1.0.1"
+clap = "2.33.1"
+cpal = "0.11.0"
+futures = "0.3"
+futures-channel = "0.3"
+futures-util = "0.3"
+lipsum = "0.6.0"
+log = "0.4"
+simple_logger = "4.2.0"
+srt-protocol = { git = "https://github.com/russelltg/srt-rs.git", rev = "5f19515" }
+srt-tokio = { git = "https://github.com/russelltg/srt-rs.git", rev = "5f19515" }
+
+[dependencies.tokio]
+version = "1.2"
+features = ["net", "time", "test-util", "macros", "io-util", "io-std", "sync", "rt", "rt-multi-thread"]
